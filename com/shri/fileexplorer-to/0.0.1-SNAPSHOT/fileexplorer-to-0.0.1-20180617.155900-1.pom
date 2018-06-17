@@ -76,6 +76,10 @@
 					<includes>
 						<include>**/*</include>
 					</includes>
+					<excludes>
+						<exclude>**/*.md5</exclude>
+						<exclude>**/*.sha1</exclude>
+					</excludes>
 					<repositoryName>mvn-repo</repositoryName>      <!-- github repo name -->
 					<repositoryOwner>gsjagdale</repositoryOwner>    <!-- github username -->
 				</configuration>
