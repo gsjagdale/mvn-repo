@@ -7,6 +7,7 @@
 	<properties>
 		<github.global.server>github</github.global.server>
 	</properties>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -52,18 +53,6 @@
 					</execution>
 				</executions>
 			</plugin>
-<!-- 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>attach-javadocs</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin> -->
 			<plugin>
 				<groupId>com.github.github</groupId>
 				<artifactId>site-maven-plugin</artifactId>
@@ -73,6 +62,7 @@
 					<noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
 					<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
 					<branch>refs/heads/master</branch>                       <!-- remote branch name -->
+					<!-- <merge>true</merge> -->
 					<includes>
 						<include>**/*</include>
 					</includes>
@@ -84,8 +74,6 @@
 					<repositoryOwner>gsjagdale</repositoryOwner>    <!-- github username -->
 				</configuration>
 				<executions>
-					<!-- run site-maven-plugin's 'site' target as part of the build's normal 
-						'deploy' phase -->
 					<execution>
 						<goals>
 							<goal>site</goal>
