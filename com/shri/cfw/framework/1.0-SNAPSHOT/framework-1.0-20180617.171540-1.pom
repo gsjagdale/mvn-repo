@@ -37,14 +37,14 @@
 					<noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
 					<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
 					<branch>refs/heads/master</branch>                       <!-- remote branch name -->
-					<!-- <merge>true</merge> -->
+<!--					<merge>true</merge> -->
 					<includes>
 						<include>**/*</include>
 					</includes>
-					<excludes>
+					<!-- <excludes>
 						<exclude>**/*.md5</exclude>
 						<exclude>**/*.sha1</exclude>
-					</excludes>
+					</excludes> -->
 					<repositoryName>mvn-repo</repositoryName>      <!-- github repo name -->
 					<repositoryOwner>gsjagdale</repositoryOwner>    <!-- github username -->
 				</configuration>
