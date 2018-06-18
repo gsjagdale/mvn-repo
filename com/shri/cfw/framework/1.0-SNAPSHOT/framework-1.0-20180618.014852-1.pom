@@ -6,12 +6,12 @@
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<repositories>
+<!-- 	<repositories>
 		<repository>
 			<id>git-repo</id>
 			<url>https://github.com/gsjagdale/mvn-repo</url>
 		</repository>
-	</repositories>
+	</repositories> -->
 
 	<properties>
 		<github.global.server>github</github.global.server>
